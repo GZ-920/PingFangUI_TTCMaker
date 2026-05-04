@@ -50,6 +50,36 @@ def check_deps():
 
 check_deps()
 
+s = r"""
+                       :JZ,           ,OL:                      
+                      _hk?.           .?kh_                     
+                     'p$?   "i-[}}?>,.  -$p'                    
+                      -0kccpW@$$$$$@WbXckQ_                     
+                       ]M$$$$$$$$$$$$$$$$$&{                      
+                     'n@$$$$$$$$$$$$$$$$$$$$Y`                    
+              .vw<   {$$$$$$$$$$$$$$$$$$$$$f   lOC^             
+              `b$}   u$$$$$$$$$$$$$$$$$$$$$Q   +$8;             
+              ^d$[   id$$$$$$$$$$$$$$$$$$$a_   +BW;             
+              "k$}    '?vZd&$$$$$$$$$%bmz}"    ~B&;             
+              'Q$b{>I,^   _k$$$$$$$$$*{   `,I!]m$d^             
+               ,\Cwwqpppwp@$$$$$$$$$$$$dmppppww0f;              
+                   .'\":li+Y8$$$$$$$$$BQ->l:\"`.                  
+                         ':|W$$$$$$$8fI`                        
+                ,>?(jzQmk#&B$$$$$$$$$B8MhwLXx\[~;'              
+              ?qMkCcf/w$$$$$$$$$$$$$$$$$$$$ZtuJdWk\.            
+              z$m^   `p$$$$$$$$$$$$$$$$$$$$n   'c$d'            
+              _@b`   "k$$$$$$$$$$$$$$$$$$$$X   .Q$x             
+              ^k$?    \$$$$$$$$$$$$$$$$$$$%-   <8%>             
+               z$U    .n@$$$$$$$$$$$$$$$$M)    n$Z.             
+               ?@#;     ?p$$$$$$$$$$$$$8c;    ^k$(              
+               `Z%?      ']LW$$$$$$$%bx!      >Wk:              
+                ';.         "~1trf)-I.        .I,               
+                           
+                              瓜子920
+"""
+
+print(s)
+
 from fontTools.ttLib import TTFont
 from fontTools.ttLib.ttCollection import TTCollection
 
@@ -71,6 +101,7 @@ def main():
         sys.exit(1)
 
     # 读取 name 表数据
+    print(s)
     print("读取 name 表数据...")
     with open(names_path, "r", encoding="utf-8") as f:
         names_list = json.load(f)

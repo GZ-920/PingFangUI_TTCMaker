@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-“””
+"""
 PingFangUI.ttc 生成脚本
 用法：
 
@@ -8,7 +8,7 @@ PingFangUI.ttc 生成脚本
 1. 在 a-Shell 中运行：python3 make.py 你的字体.ttf
 
 生成的 PingFangUI.ttc 会出现在同一目录下。
-“””
+"""
 
 import sys
 import os

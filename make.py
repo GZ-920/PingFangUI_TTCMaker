@@ -1,5 +1,31 @@
 #!/usr/bin/env python3
 """
+
+                       :JZ,           ,OL:                      
+                      _hk?.           .?kh_                     
+                     'p$?   "i-[}}?>,.  -$p'                    
+                      -0kccpW@$$$$$@WbXckQ_                     
+                       ]M$$$$$$$$$$$$$$$&{                      
+                     'n@$$$$$$$$$$$$$$$$$$Y`                    
+              .vw<   {$$$$$$$$$$$$$$$$$$$$$f   lOC^             
+              `b$}   u$$$$$$$$$$$$$$$$$$$$$Q   +$8;             
+              ^d$[   id$$$$$$$$$$$$$$$$$$$a_   +BW;             
+              "k$}    '?vZd&$$$$$$$$$%bmz}"    ~B&;             
+              'Q$b{>I,^   _k$$$$$$$$$*{   `,I!]m$d^             
+               ,\Cwwqpppwp@$$$$$$$$$$$$dmppppww0f;              
+                   .'":li+Y8$$$$$$$$$BQ->l:"`.                  
+                         ':|W$$$$$$$8fI`                        
+                ,>?(jzQmk#&B$$$$$$$$$B8MhwLXx\[~;'              
+              ?qMkCcf/w$$$$$$$$$$$$$$$$$$$$ZtuJdWk\.            
+              z$m^   `p$$$$$$$$$$$$$$$$$$$$n   'c$d'            
+              _@b`   "k$$$$$$$$$$$$$$$$$$$$X   .Q$x             
+              ^k$?    \$$$$$$$$$$$$$$$$$$$%-   <8%>             
+               z$U    .n@$$$$$$$$$$$$$$$$M)    n$Z.             
+               ?@#;     ?p$$$$$$$$$$$$$8c;    ^k$(              
+               `Z%?      ']LW$$$$$$$%bx!      >Wk:              
+                ';.         "~1trf)-I.        .I,               
+                           
+                              瓜子920
 PingFangUI.ttc 生成脚本
 用法：
   1. 将本脚本和 names.json 放在同一目录
@@ -38,10 +64,10 @@ def main():
 
     # 检查文件
     if not os.path.exists(font_path):
-        print(f"错误：找不到字体文件 {font_path}")
+        print(f"🚨错误：找不到字体文件 {font_path}")
         sys.exit(1)
     if not os.path.exists(names_path):
-        print(f"错误：找不到 names.json，请确保它和脚本在同一目录")
+        print(f"🚨错误：找不到 names.json，请确保它和脚本在同一目录")
         sys.exit(1)
 
     # 读取 name 表数据
@@ -93,7 +119,7 @@ def main():
     col.save(out_path)
 
     size_mb = os.path.getsize(out_path) / 1024 / 1024
-    print(f"完成！输出文件：{out_path}（{size_mb:.1f} MB）")
+    print(f"😄完成！输出文件：{out_path}（{size_mb:.1f} MB）")
 
 if __name__ == "__main__":
     main()

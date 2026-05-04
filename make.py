@@ -3,7 +3,7 @@
 PingFangUI.ttc 生成脚本
 用法：
 
-1. 将本脚本和 pingfangui_names.json 放在同一目录
+1. 将本脚本和 names.json 放在同一目录
 1. 将你的替换字体（TTF/OTF）放在同一目录
 1. 在 a-Shell 中运行：python3 make.py 你的字体.ttf
 
@@ -30,20 +30,20 @@ from fontTools.ttLib.ttCollection import TTCollection
 
 def main():
 if len(sys.argv) < 2:
-print(“用法：python3 make_pingfangui.py 你的字体.ttf”)
+print(“用法：python3 make.py 你的字体.ttf”)
 sys.exit(1)
 
 ```
 font_path = sys.argv[1]
 script_dir = os.path.dirname(os.path.abspath(__file__))
-names_path = os.path.join(script_dir, "pingfangui_names.json")
+names_path = os.path.join(script_dir, "names.json")
 
 # 检查文件
 if not os.path.exists(font_path):
     print(f"错误：找不到字体文件 {font_path}")
     sys.exit(1)
 if not os.path.exists(names_path):
-    print(f"错误：找不到 pingfangui_names.json，请确保它和脚本在同一目录")
+    print(f"错误：找不到 names.json，请确保它和脚本在同一目录")
     sys.exit(1)
 
 # 读取 name 表数据

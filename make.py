@@ -101,7 +101,6 @@ def main():
         sys.exit(1)
 
     # 读取 name 表数据
-    print(s)
     print("读取 name 表数据...")
     with open(names_path, "r", encoding="utf-8") as f:
         names_list = json.load(f)

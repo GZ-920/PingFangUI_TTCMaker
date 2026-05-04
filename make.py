@@ -78,7 +78,6 @@ _@b`   "k$$$$$$$$$$$$$$$$$$$$X   .Q$x
 
 print(s)
 
-print(s)
 
 from fontTools.ttLib import TTFont
 from fontTools.ttLib.ttCollection import TTCollection

@@ -12,7 +12,7 @@
    curl -L -o names.json https://raw.githubusercontent.com/GZ-920/PingFangUI_TTCMaker/main/names.json
    curl -L -o hywh.ttf https://raw.githubusercontent.com/GZ-920/PingFangUI_TTCMaker/main/hywh.ttf
    ls
-```
+   ```
 
 最后一行输出能看到 make.py、names.json 和 hywh.ttf 即为成功。
 
